@@ -21,7 +21,7 @@
     },
     "scripts": {
         "start": "npm run dev-server",
-        "dev-server": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack.dev.js",
+        "dev-server": "NODE_ENV=development webpack-dev-server --config config/webpack.dev.js",
         "docs:generate": "typedoc --out docs src --exclude \"**/*+(index|.test).ts\"",
         "build": "rm -rf dist/ && webpack --config config/webpack.prod.js",
         "test": "BABEL_ENV=test jest --config config/jest.config.js",
