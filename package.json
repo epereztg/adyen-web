@@ -21,7 +21,6 @@
     },
     "scripts": {
         "start": "npm run dev-server",
-        "heroku-postbuild": "webpack -p",
         "dev-server": "NODE_ENV=development webpack-dev-server --config config/webpack.dev.js",
         "docs:generate": "typedoc --out docs src --exclude \"**/*+(index|.test).ts\"",
         "build": "rm -rf dist/ && webpack --config config/webpack.prod.js",
